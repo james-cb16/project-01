@@ -552,6 +552,10 @@
     margin-right: auto;
     margin-left: auto;
   }
+
+  .container-nav {
+    padding-top: 80px;
+  }
   
   @media (min-width: 576px) {
     .container {
