@@ -554,7 +554,29 @@
   }
 
   .container-nav {
-    padding-top: 80px;
+    padding-top: 65px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+
+  .emoji-button {
+    padding-right: 5px;
+  }
+
+  .eight-ball {
+    width: 15%;
+  }
+
+  .chuck-norris {
+    width: 17%;
+  }
+
+  .yo-mama {
+    width: 16%;
+  }
+
+  .dad-joke {
+    width: 16%;
   }
   
   @media (min-width: 576px) {
