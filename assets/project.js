@@ -17,14 +17,27 @@ $.ajax({
         // random gif
         var randomGif = [Math.floor(Math.random() * response.data.length)];
 
-        console.log(randomGif)
-
-        var gifExample = $("<img class='gif-object' src=" + response.data[randomGif].images.downsized_medium.url + " width= 500px height = 400px>")
+        var gifExample = $("<img src=" + response.data[randomGif].images.downsized_medium.url + " width= 500px height = 400px>")
 
 
         $(".gif-img").prepend(gifExample)
         $(".gif-title").append(response.data[randomGif].title)
-
     })
 });
+
+// JOKE JS
+
+$(".emoji-button").on("click", function (event) {
+
+    var geekJokeURL = "https://geek-jokes.sameerkumar.website/api"
+
+    $.ajax({
+        url: geekJokeURL,
+        method: "GET"
+    }).then(function (response) {
+        event.preventDefault();
+        $(".joke-section").text(response);
+    });
+
+})
 
