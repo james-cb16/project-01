@@ -60,9 +60,13 @@
     line-height: 1.5;
     color: #212529;
     text-align: left;
-    background-color: #fff;
+    background-image: url("https://previews.123rf.com/images/almagami/almagami1703/almagami170300036/74223980-light-gray-isometric-chevron-pattern-neutral-seamless-herringbone-wallpaper-pattern-for-modern-desig.jpg");
   }
   
+  .gif-object {
+    width: 100%;
+  }
+
   [tabindex="-1"]:focus {
     outline: 0 !important;
   }
@@ -554,13 +558,18 @@
   }
 
   .container-nav {
-    padding-top: 65px;
+    padding-top: 75px;
     padding-bottom: 10px;
     text-align: center;
   }
 
   .emoji-button {
     padding-right: 5px;
+  }
+
+  .emoji-logo {
+    width: 13%;
+    float: right;
   }
 
   .eight-ball {
@@ -4181,6 +4190,13 @@
     -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 0.5rem 1rem;
+    background-image: url("https://thumbs.gfycat.com/NegativeOfficialDorking-size_restricted.gif");
+    background-size: 100%;
+  }
+
+  .footer {
+    background-image: url("https://thumbs.gfycat.com/NegativeOfficialDorking-size_restricted.gif");
+    background-size: 100%;
   }
   
   .navbar > .container,
@@ -4203,6 +4219,11 @@
     font-size: 1.25rem;
     line-height: inherit;
     white-space: nowrap;
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    text-shadow: -1px 1px 2px #000,
+				  1px 1px 2px #000,
+				  1px -1px 0 #000,
+				  -1px -1px 0 #000;
   }
   
   .navbar-brand:hover, .navbar-brand:focus {
