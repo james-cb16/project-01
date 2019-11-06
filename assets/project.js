@@ -1,8 +1,7 @@
 // GIF JS CODE
 var giphyApiKey = "XkIzMsg4ouxg5wPkAxLSXrbHZHZZVWD2";
 
-var queryURL = "https://api.giphy.com/v1/gifs/search?q=funny&api_key=" + giphyApiKey + "&limit=50&rating=pg"; 
-console.log("heyyeye")
+var queryURL = "https://api.giphy.com/v1/gifs/search?q=funny&api_key=" + giphyApiKey + "&limit=200&rating=pg"; 
 
 $.ajax({
     url: queryURL,
