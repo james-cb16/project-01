@@ -24,3 +24,20 @@ $.ajax({
         
     });
 
+
+
+    let adviceQuery = "https://api.adviceslip.com/advice"
+
+    $.ajax({
+        url: adviceQuery,
+        method: "GET"
+    }).then(function(response){
+        console.log(response)
+
+        
+
+
+    
+    });
+
+        
