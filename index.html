@@ -10,7 +10,12 @@
 
     <title>Shakesperience</title>
 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <link href="assets/style.css" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
 
     <!-- <link href="css/full-width-pics.css" rel="stylesheet"> -->
@@ -20,47 +25,39 @@
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">Shakesperience</a>
-
+            <div class="navbar-brand" href="#">Shakesperience<img class="emoji-logo"
+                    src="https://media3.giphy.com/media/hVlZnRT6QW1DeYj6We/giphy.gif"></div>
         </div>
-
 
     </nav>
     <div class="container-nav">
 
         <div>
-            <div class=>
-                <span class="">
-                    <a class=" " href="#">
-                        <img class="emoji-button eight-ball"
-                            src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/144/apple/232/billiards_1f3b1.png">
-                    </a>
-                </span>
-                <span class="">
-                    <a class=" " href="#">
-                        <img class="emoji-button chuck-norris"
-                            src="https://specialarad.ro/wp-content/uploads/2014/05/Awesome_Smilies_by_E_rap.png">
-                    </a>
-                </span>
-                <span class="">
-                    <a class="" href="#"><img class="emoji-button yo-mama"
-                            src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/144/apple/232/woman-curly-haired-medium-skin-tone_1f469-1f3fd-200d-1f9b1.png"></a>
-                </span>
-                <span class="">
-                    <a class=" " href="#">
-                        <img class="emoji-button dad-joke"
-                            src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/144/apple/232/man_emoji-modifier-fitzpatrick-type-1-2_1f468-1f3fb_1f3fb.png">
-                    </a>
-                </span>
-                <span class="">
-                    <a class=" " href="#">
-                        <img class="emoji-button dad-joke"
-                            src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/232/black-question-mark-ornament_2753.png">
-                    </a>
-                </span>
-            </div>
+            <span class="">
+                <a class=" " href="#">
+                    <img class="emoji-button eight-ball"
+                        src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/144/apple/232/billiards_1f3b1.png">
+                </a>
+            </span>
+            </span>
+            <span class="">
+                <a class="" href="#"><img class="emoji-button yo-mama"
+                        src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/144/apple/232/woman-curly-haired-medium-skin-tone_1f469-1f3fd-200d-1f9b1.png"></a>
+            </span>
+            <span class="">
+                <a class=" " href="#">
+                    <img class="emoji-button dad-joke"
+                        src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/144/apple/232/man_emoji-modifier-fitzpatrick-type-1-2_1f468-1f3fb_1f3fb.png">
+                </a>
+            </span>
+            <span class="">
+                <a class=" " href="#">
+                    <img class="emoji-button dad-joke"
+                        src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/232/black-question-mark-ornament_2753.png">
+                </a>
+            </span>
         </div>
     </div>
     <!-- Header - set the background image for the header in the line below -->
@@ -73,9 +70,7 @@
         <div class="container">
             <h1>Section Heading QUOTE</h1>
             <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, suscipit, rerum quos facilis repellat
-                architecto commodi officia atque nemo facere eum non illo voluptatem quae delectus odit vel itaque amet.
-            </p>
+            <p></p>
         </div>
     </section>
 
@@ -89,14 +84,11 @@
 
     <!-- GIF SECTION -->
     <div class="container d-flex justify-content-center">
-        <div class="card " style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body text-center">
-                <h1>GIF SECTION</h1>
-                <p class="card-text text-center">Information on the Gif</p>
-            </div>
+        <div class="card gif-img">
         </div>
     </div>
+    <h1 class="gif-title text-center"> </h1>
+
 
 
     <!-- SHARE LINK SECTION -->
@@ -115,8 +107,9 @@
     </footer>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+
 
     <!-- LOCAL JAVASCRIPT LINK -->
     <script src="assets/project.js"></script>
