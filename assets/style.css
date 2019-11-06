@@ -4181,6 +4181,13 @@
     -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 0.5rem 1rem;
+    background-image: url("https://i.imgur.com/YtRPuwr.gif");
+    background-size: 100%;
+  }
+
+  .footer {
+    background-image: url("https://i.imgur.com/YtRPuwr.gif");
+    background-size: 100%;
   }
   
   .navbar > .container,
