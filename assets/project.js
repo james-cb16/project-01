@@ -15,7 +15,7 @@ $.ajax({
 
         console.log(randomGif)
 
-        var gifExample = $("<img src=" + response.data[randomGif].images.downsized_medium.url + " width= 500px height = 400px>")
+        var gifExample = $("<img class='gif-object' src=" + response.data[randomGif].images.downsized_medium.url + ">")
         
 
         $(".gif-img").prepend(gifExample)
