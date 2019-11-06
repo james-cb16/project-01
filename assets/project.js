@@ -10,6 +10,11 @@ $.ajax({
     }).then(function(response){
         console.log(response)
 
+        $(".emoji-button").on("click", function(event){
+            event.preventDefault();
+            $(".gif-img").empty();
+            $(".gif-title").empty();
+
         // random gif
         var randomGif = [Math.floor(Math.random() * response.data.length)];
 
@@ -21,6 +26,6 @@ $.ajax({
         $(".gif-img").prepend(gifExample)
         $(".gif-title").append(response.data[randomGif].title)
 
-        
+    })
     });
 
