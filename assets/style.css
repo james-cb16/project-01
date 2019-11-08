@@ -76,6 +76,11 @@
   padding: 20px 5px;
   border: dashed 5px black;
 }
+.joke-holder, .joke-holder2{
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
 
   [tabindex="-1"]:focus {
     outline: 0 !important;
