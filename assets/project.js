@@ -36,9 +36,11 @@ $(".eight-ball, .yo-mama").on("click", function (event) {
         method: "GET"
     }).then(function (response) {
         event.preventDefault();
-        $(".joke-container").empty();
+
+        $(".joke").empty();
         $(".joke-section2").empty();
-        $(".joke-container").append("<div class=joke-holder>")
+        $(".joke").append("<div class= joke-container>")
+        $(".joke-container").append("<div class=joke-holder> </div> <br>")
         $(".joke-holder").text(response);
 
     });
@@ -55,14 +57,9 @@ $(".dad-joke").on("click", function (event) {
     }).then(function (response) {
         event.preventDefault();
 
-        // $(".joke-section").empty();
-        // $(".joke-section2").empty();
-        // $(".joke-section").text(response.setup);
-        // $(".joke-section2").text(response.punchline);
-
-        $(".joke-container").empty();
+        $(".joke").empty();
         $(".joke-section2").empty();
-        $(".joke").append("<div class= joke-container")
+        $(".joke").append("<div class= joke-container>")
         $(".joke-container").append("<div class=joke-holder> </div> <br>")
         $(".joke-container").append("<div class=joke-holder2>")
 
