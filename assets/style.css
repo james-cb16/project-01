@@ -65,7 +65,17 @@
   
   .gif-object {
     width: 100%;
+    
   }
+  .gif-img{
+    border: solid 10px rgba(60, 20, 78, 0.5);
+  } 
+
+.joke-container{
+  background-image: url("https://thumbs.gfycat.com/NegativeOfficialDorking-size_restricted.gif");
+  padding: 20px 5px;
+  border: dashed 5px black;
+}
 
   [tabindex="-1"]:focus {
     outline: 0 !important;

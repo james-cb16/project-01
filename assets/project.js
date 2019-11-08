@@ -17,7 +17,7 @@ $.ajax({
         // random gif
         var randomGif = [Math.floor(Math.random() * response.data.length)];
 
-        var gifExample = $("<img src=" + response.data[randomGif].images.downsized_medium.url + " width= 500px height = 400px>")
+        var gifExample = $("<img class= gif-img src=" + response.data[randomGif].images.downsized_medium.url + ">")
 
 
         $(".gif-img").prepend(gifExample)
@@ -36,9 +36,11 @@ $(".eight-ball, .yo-mama").on("click", function (event) {
         method: "GET"
     }).then(function (response) {
         event.preventDefault();
-        $(".joke-section").empty();
+        $(".joke-container").empty();
         $(".joke-section2").empty();
-        $(".joke-section").text(response);
+        $(".joke-container").append("<div class=joke-holder>")
+        $(".joke-holder").text(response);
+
     });
 
 })
@@ -53,10 +55,20 @@ $(".dad-joke").on("click", function (event) {
     }).then(function (response) {
         event.preventDefault();
 
-        $(".joke-section").empty();
+        // $(".joke-section").empty();
+        // $(".joke-section2").empty();
+        // $(".joke-section").text(response.setup);
+        // $(".joke-section2").text(response.punchline);
+
+        $(".joke-container").empty();
         $(".joke-section2").empty();
-        $(".joke-section").text(response.setup);
-        $(".joke-section2").text(response.punchline);
+        $(".joke").append("<div class= joke-container")
+        $(".joke-container").append("<div class=joke-holder> </div> <br>")
+        $(".joke-container").append("<div class=joke-holder2>")
+
+        $(".joke-holder").text(response.setup);
+        $(".joke-holder2").text(response.punchline);
+
     });
 
 })
