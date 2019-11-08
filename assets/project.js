@@ -17,7 +17,7 @@ $.ajax({
         // random gif
         var randomGif = [Math.floor(Math.random() * response.data.length)];
 
-        var gifExample = $("<img src=" + response.data[randomGif].images.downsized_medium.url + " width= 500px height = 400px>")
+        var gifExample = $("<img class= gif-img src=" + response.data[randomGif].images.downsized_medium.url + ">")
 
 
         $(".gif-img").prepend(gifExample)
@@ -27,7 +27,7 @@ $.ajax({
 
 // JOKE JS
 
-$(".emoji-button").on("click", function (event) {
+$(".eight-ball, .yo-mama").on("click", function (event) {
 
     var geekJokeURL = "https://geek-jokes.sameerkumar.website/api"
 
@@ -36,8 +36,36 @@ $(".emoji-button").on("click", function (event) {
         method: "GET"
     }).then(function (response) {
         event.preventDefault();
-        $(".joke-section").text(response);
+
+        $(".joke").empty();
+        $(".joke-section2").empty();
+        $(".joke").append("<div class= joke-container>")
+        $(".joke-container").append("<div class=joke-holder> </div> <br>")
+        $(".joke-holder").text(response);
+
     });
 
 })
 
+$(".dad-joke").on("click", function (event) {
+
+    var JokeURL = "https://official-joke-api.appspot.com/jokes/random"
+
+    $.ajax({
+        url: JokeURL,
+        method: "GET"
+    }).then(function (response) {
+        event.preventDefault();
+
+        $(".joke").empty();
+        $(".joke-section2").empty();
+        $(".joke").append("<div class= joke-container>")
+        $(".joke-container").append("<div class=joke-holder> </div> <br>")
+        $(".joke-container").append("<div class=joke-holder2>")
+
+        $(".joke-holder").text(response.setup);
+        $(".joke-holder2").text(response.punchline);
+
+    });
+
+})
