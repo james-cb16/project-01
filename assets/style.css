@@ -76,6 +76,11 @@
   padding: 20px 5px;
   border: dashed 5px black;
 }
+.joke-holder, .joke-holder2{
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
 
 .joke {
   font-family: 'Source Sans Pro', sans-serif;
