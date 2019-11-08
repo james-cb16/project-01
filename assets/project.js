@@ -27,7 +27,7 @@ $.ajax({
 
 // JOKE JS
 
-$(".emoji-button").on("click", function (event) {
+$(".eight-ball, .yo-mama").on("click", function (event) {
 
     var geekJokeURL = "https://geek-jokes.sameerkumar.website/api"
 
@@ -36,8 +36,27 @@ $(".emoji-button").on("click", function (event) {
         method: "GET"
     }).then(function (response) {
         event.preventDefault();
+        $(".joke-section").empty();
+        $(".joke-section2").empty();
         $(".joke-section").text(response);
     });
 
 })
 
+$(".dad-joke").on("click", function (event) {
+
+    var JokeURL = "https://official-joke-api.appspot.com/jokes/random"
+
+    $.ajax({
+        url: JokeURL,
+        method: "GET"
+    }).then(function (response) {
+        event.preventDefault();
+
+        $(".joke-section").empty();
+        $(".joke-section2").empty();
+        $(".joke-section").text(response.setup);
+        $(".joke-section2").text(response.punchline);
+    });
+
+})
