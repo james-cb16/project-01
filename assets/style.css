@@ -82,6 +82,11 @@
   text-align: center;
 }
 
+.joke {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Baloo', cursive;
+}
+
   [tabindex="-1"]:focus {
     outline: 0 !important;
   }
@@ -564,18 +569,31 @@
     overflow-y: scroll;
   }
   
+  .catch-phrase {
+    font-size: 20px;
+    text-align: center;
+  }
+
   .container {
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+    font-family: 'Bowlby One SC', cursive;
+    font-family: 'Muli', sans-serif;
   }
 
   .container-nav {
-    padding-top: 75px;
+    padding-top: 10px;
     padding-bottom: 10px;
     text-align: center;
+  }
+
+  .Shakesperience {
+    margin-top: 90px;
+    text-align: center;
+    margin-left: 20px;
   }
 
   .emoji-button {
@@ -618,7 +636,7 @@
   @media (min-width: 992px) {
     .container {
       max-width: 960px;
-    }
+    }    
   }
   
   @media (min-width: 1200px) {
@@ -4231,15 +4249,11 @@
     padding-top: 0.3125rem;
     padding-bottom: 0.3125rem;
     margin-right: 1rem;
-    font-size: 1.25rem;
+    font-size: 30px;
     line-height: inherit;
     white-space: nowrap;
-    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
-    text-shadow: -1px 1px 2px #000,
-				  1px 1px 2px #000,
-				  1px -1px 0 #000,
-				  -1px -1px 0 #000;
-  }
+    font-family: 'Bowlby One SC', cursive;
+    }
   
   .navbar-brand:hover, .navbar-brand:focus {
     text-decoration: none;
