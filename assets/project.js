@@ -39,7 +39,7 @@ $(".help").on("click", function (event) {
 
 // JOKE JS
 
-$(".yo-mama").on("click", function (event) {
+$(".chuck-norris").on("click", function (event) {
     var geekJokeURL = "https://geek-jokes.sameerkumar.website/api"
 
     $.ajax({
