@@ -10,6 +10,8 @@
 
     <title>Shakesperience</title>
 
+    <link rel="stylesheet" href="assets/dark-mode.css">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
@@ -33,31 +35,29 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container-nav">
-            <div>
-                <span class="">
-                    <a class=" " href="#">
-                        <img class="emoji-button eight-ball"
-                            src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/144/apple/232/billiards_1f3b1.png">
-                    </a>
-                </span>
-                </span>
-                <span class="">
-                    <a class="" href="#"><img class="emoji-button yo-mama"
-                            src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/144/apple/232/woman-curly-haired-medium-skin-tone_1f469-1f3fd-200d-1f9b1.png"></a>
-                </span>
-                <span class="">
-                    <a class=" " href="#">
-                        <img class="emoji-button dad-joke"
-                            src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/144/apple/232/man_emoji-modifier-fitzpatrick-type-1-2_1f468-1f3fb_1f3fb.png">
-                    </a>
-                </span>
-                <span class="">
-                    <a class=" " href="#">
-                        <img class="emoji-button dad-joke"
-                            src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/232/black-question-mark-ornament_2753.png">
-                    </a>
-                </span>
-            </div>
+            <span class="">
+                <a class=" " href="#">
+                    <img class="emoji-button eight-ball"
+                        src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/144/apple/232/billiards_1f3b1.png">
+                </a>
+            </span>
+            </span>
+            <span class="">
+                <a class="" href="#"><img class="emoji-button chuck-norris"
+                        src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/232/face-with-cowboy-hat_1f920.png"></a>
+            </span>
+            <span class="">
+                <a class=" " href="#">
+                    <img class="emoji-button dad-joke"
+                        src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/144/apple/232/face-with-tears-of-joy_1f602.png">
+                </a>
+            </span>
+            <span class="">
+                <a class=" " href="#">
+                    <img class="help"
+                        src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/232/black-question-mark-ornament_2753.png">
+                </a>
+            </span>
 
 
     </nav>
@@ -74,7 +74,8 @@
     <!-- Content section -->
     <section class="py-5">
         <div class="container">
-            <h4 class="catch-phrase">Art thou feeling weary? Seekest thou advice from the Internet? Clicketh the buttons
+            <h4 class="catch-phrase">Art thou feeling lonely? Seekest thou advice from the Internet? Clicketh the
+                buttons
                 above
                 for a
                 full <i>Shakesperience!</i></h4>
@@ -95,7 +96,7 @@
     <!-- Content section -->
 
     <!-- GIF SECTION -->
-    <div class="container d-flex justify-content-center">
+    <div class="container gif-section d-flex justify-content-center">
         <div class="card gif-img">
             <img class="gif-img" src="assets/video/paulogif.gif">
         </div>
@@ -107,14 +108,20 @@
     <!-- SHARE LINK SECTION -->
     <section class="py-4">
         <div class="container">
-            <p class="lead">Share links</p>
+            <p class="">Your eyes burning from the brightness? Try dark mode!</p>
         </div>
     </section>
+
+    <div class="custom-control custom-switch">
+        <input type="checkbox" class="custom-control-input" id="darkSwitch">
+        <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
+    </div>
+
 
     <!-- Footer -->
     <footer class="footer py-5 bg-dark">
         <div class="container">
-            <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+            <p class="m-0 text-center text-white">Copyright &copy; 2019</p>
         </div>
         <!-- /.container -->
     </footer>
@@ -125,6 +132,8 @@
 
 
     <!-- LOCAL JAVASCRIPT LINK -->
+    <script src="assets/dark-mode-switch.min.js"></script>
+
     <script src="assets/project.js"></script>
 </body>
 

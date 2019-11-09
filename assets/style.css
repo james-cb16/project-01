@@ -60,7 +60,7 @@
     line-height: 1.5;
     color: #212529;
     text-align: left;
-    background-image: url("https://previews.123rf.com/images/almagami/almagami1703/almagami170300036/74223980-light-gray-isometric-chevron-pattern-neutral-seamless-herringbone-wallpaper-pattern-for-modern-desig.jpg");
+    background-color: #e4e4e4;
   }
   
   .gif-object {
@@ -580,7 +580,6 @@
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
-    font-family: 'Bowlby One SC', cursive;
     font-family: 'Muli', sans-serif;
   }
 
@@ -588,6 +587,8 @@
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: center;
+    width: 100%;
+    height: 10vh;
   }
 
   .Shakesperience {
@@ -598,11 +599,7 @@
 
   .emoji-button {
     padding-right: 5px;
-  }
-
-  .emoji-logo {
-    width: 13%;
-    float: right;
+    margin-left: 7px;
   }
 
   .eight-ball {
@@ -613,17 +610,51 @@
     width: 17%;
   }
 
-  .yo-mama {
-    width: 16%;
-  }
-
   .dad-joke {
     width: 16%;
   }
+
+  .help {
+    width: 16%;
+  }
+
+  .instructions {
+    font-family: 'Muli', sans-serif;
+    font-size: 17px;
+  }
+
+  .instructions1 {
+    margin-top: 3rem;
+  }
+
   
-  @media (min-width: 576px) {
+  
+  /* Main Media Code */
+  @media (max-width: 760px) {
+    .gif-section {
+      margin-top: -10%;
+    }
+    .joke-holder, .joke-holder2  {
+      font-size: 20px;
+    }
+    .emoji-help {
+    width: 12%;
+    }
+  }
+
+  @media (min-width: 300px) {
     .container {
       max-width: 540px;
+    }
+    .catch-phrase {
+      font-size: 17px;
+    }
+    .emoji-button {
+      margin-top: -5px;
+    }
+    
+    .py-5 {
+      padding-bottom: 1rem;
     }
   }
   
@@ -631,12 +662,52 @@
     .container {
       max-width: 720px;
     }
+    .emoji-button, .help {
+      width: 7%;
+      margin-top: -5px;
+      margin-right: 7%;
+    }
+    .container-nav {
+      text-align: start;
+    }
+    .eight-ball {
+      margin-left: 25%;
+    }
+    .catch-phrase {
+      font-size: 20px;
+    }
+    .emoji-help {
+      width: 7%;
+    }
+    .instructions {
+      text-align: center;
+    }
   }
   
   @media (min-width: 992px) {
     .container {
       max-width: 960px;
-    }    
+    }
+    .emoji-button, .help {
+      width: 5%;
+      margin-top: -5px;
+      margin-right: 7%;
+    }
+    .container-nav {
+      text-align: start;
+    }
+    .eight-ball {
+      margin-left: 28%;
+    }
+    .catch-phrase {
+      font-size: 20px;
+    }
+    .py-5 {
+      padding-top: 1rem;
+    }
+    .emoji-help {
+      width: 5%;
+    }
   }
   
   @media (min-width: 1200px) {
@@ -8260,7 +8331,7 @@
   
   .pt-5,
   .py-5 {
-    padding-top: 3rem !important;
+    padding-top: 1rem !important;
   }
   
   .pr-5,
@@ -10111,4 +10182,22 @@
       border-color: #dee2e6;
     }
   }
+
+  [data-theme="dark"] {
+      background-color:#111 !important;
+      color:#eee;
+    }
+     
+    [data-theme="dark"] .bg-light {
+      background-color:#333 !important;
+    }
+     
+    [data-theme="dark"] .bg-white {
+      background-color:#000 !important;
+    }
+     
+    [data-theme="dark"] .bg-black {
+      background-color:#eee !important;
+    }
+    
   /*# sourceMappingURL=bootstrap.css.map */
