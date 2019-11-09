@@ -24,6 +24,19 @@ $.ajax({
     })
 });
 
+//Instructions
+$(".help").on("click", function (event) {
+    $(".joke").empty();
+    $(".joke-section2").empty();
+    $(".joke").append("<h4 class='instructions instructions1'><strong>What the hell do these buttons do?</strong><br></h4>");
+    $(".joke").append("<h4 class='instructions'><img class='emoji-help' src='https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/144/apple/232/billiards_1f3b1.png'> - get valuable & meaningful advice</h4>");
+    $(".joke").append("<h4 class='instructions'><img class='emoji-help' src='https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/232/face-with-cowboy-hat_1f920.png'> - geeky / chuck norris jokes</h4>");
+    $(".joke").append("<h4 class='instructions'><img class='emoji-help' src='https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/144/apple/232/face-with-tears-of-joy_1f602.png'> - random funny jokes</h4>");
+    $(".joke").append("<h4 class='instructions'><img class='emoji-help' src='https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/232/black-question-mark-ornament_2753.png'> - press button for help</h4>");
+    $(".joke").append("<h4 class='instructions'>A joke/advice will be given, after which a random gif appears below said joke/advice.")
+});
+
+
 // JOKE JS
 
 $(".yo-mama").on("click", function (event) {
